@@ -49,9 +49,9 @@ int main() {
                 cin>>dua;
 
                 if(dua % 2 == 0){
-                    cout<<dua<<" adalah dua genap.";
+                    cout<<dua<<" adalah genap.";
                 }else{
-                    cout<<dua<<" adalah dua ganjil.";
+                    cout<<dua<<" adalah ganjil.";
                 }
 				cout<<endl;
 			
