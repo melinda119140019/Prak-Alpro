@@ -1,0 +1,90 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int satu;
+
+    cout<<"Spek tugas praktikum alpro"<<endl;
+    cout<<"1. Percabangan(switch)"<<endl;
+    cout<<"2. Percabangan(if-else)"<<endl;
+    cout<<"3. Perulangan(do-while)"<<endl;
+    cout<<"4. Perulangan(for)"<<endl;
+
+    cout<<"Mau yang mana? : ";
+    cin>>satu;
+
+    switch(satu){
+        case 1:
+            char tiga;
+
+                cout<<"Masukkan nilai (A, B, C, D, atau E): ";
+                cin>>tiga;
+
+                switch (tiga) {
+                    case 'A':
+                        cout<<"Asik"<<endl;
+                        break;
+                    case 'B':
+                        cout<< "Bagus"<<endl;
+                        break;
+                    case 'C':
+                        cout<<"Cukup"<<endl;
+                        break;
+                    case 'D':
+                        cout<<"Duh"<<endl;
+                        break;
+                    case 'E':
+                        cout<<"Esok masih ada pelangi"<<endl;
+                        break;
+                    default:
+                        cout<<"Input yang bener dong!"<<endl;
+                }
+            break;
+
+        case 2:
+			
+                int dua;
+
+                cout<<"Masukkan angka: ";
+                cin>>dua;
+
+                if(dua % 2 == 0){
+                    cout<<dua<<" adalah dua genap.";
+                }else{
+                    cout<<dua<<" adalah dua ganjil.";
+                }
+				cout<<endl;
+			
+            break;
+			
+			
+        case 3:
+            {
+                int mulai = 1;
+
+                cout<<"Perulangan do-while:"<<endl;
+                do {
+                    cout<<mulai<<" ";
+                    mulai++;
+                }while(mulai<19);
+
+                cout<<endl;
+            }
+            break;
+
+        case 4:
+            {
+                cout<<"Perulangan for:"<<endl;
+                for(int i = 1; i < 19; i++){
+                    cout<<i<<" ";
+                }
+                cout<<endl;
+            }
+            break;
+
+        default:
+            cout<<"Input yang bener dong!"<<endl;
+    }
+
+    return 0;
+}
